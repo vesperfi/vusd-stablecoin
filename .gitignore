@@ -12,6 +12,8 @@ node_modules
 # Hard hat
 artifacts
 cache
+typechain*
+deployments
 
 # Solidity coverage
 coverage

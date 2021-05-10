@@ -1,17 +1,4 @@
 {
   "printWidth": 120,
-  "overrides": [
-    {
-      "files": [
-        "test/*.js",
-        "test/**/*.js",
-        "*.js"
-      ],
-      "options": {
-        "semi": false,
-        "singleQuote": true
-      }
-    }
-  ],
   "bracketSpacing": false
 }
