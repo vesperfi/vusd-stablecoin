@@ -1,13 +1,13 @@
 import {HardhatRuntimeEnvironment} from "hardhat/types";
 import {DeployFunction} from "hardhat-deploy/types";
 
-const name = "Minter";
+const name = "Redeemer";
 const vusd = "VUSD";
 let version;
 
 const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   const {deployments, getNamedAccounts} = hre;
-  const {deploy, execute} = deployments;
+  const {deploy} = deployments;
 
   const {deployer} = await getNamedAccounts();
   const vusdDeployment = await deployments.get(vusd);
@@ -18,11 +18,8 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     log: true,
   });
 
-  const minter = await hre.ethers.getContractAt(name, deployed.address);
-
-  //Update minter in VUSD
-  await execute(vusd, {from: deployer, log: true}, "updateMinter", minter.address);
-  version = await minter.VERSION();
+  const redeemer = await hre.ethers.getContractAt(name, deployed.address);
+  version = await redeemer.VERSION();
 };
 
 export default func;

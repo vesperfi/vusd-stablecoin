@@ -5,7 +5,9 @@ pragma solidity 0.8.3;
 import "@openzeppelin/contracts/token/ERC20/extensions/draft-IERC20Permit.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-interface IVirtualDollar is IERC20, IERC20Permit {
+interface IVUSD is IERC20, IERC20Permit {
+    function burnFrom(address _user, uint256 _amount) external;
+
     function mint(address _to, uint256 _amount) external;
 
     function multiTransfer(address[] memory _recipients, uint256[] memory _amounts) external returns (bool);

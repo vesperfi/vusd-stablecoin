@@ -1,8 +1,9 @@
 import {HardhatRuntimeEnvironment} from "hardhat/types";
 import {DeployFunction} from "hardhat-deploy/types";
 
-const name = "Minter";
+const name = "Treasury";
 const vusd = "VUSD";
+const redeemer = "Redeemer";
 let version;
 
 const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
@@ -18,14 +19,19 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     log: true,
   });
 
-  const minter = await hre.ethers.getContractAt(name, deployed.address);
+  const treasury = await hre.ethers.getContractAt(name, deployed.address);
 
-  //Update minter in VUSD
-  await execute(vusd, {from: deployer, log: true}, "updateMinter", minter.address);
-  version = await minter.VERSION();
+  // Update treasury in VUSD
+  await execute(vusd, {from: deployer, log: true}, "updateTreasury", treasury.address);
+
+  //Update redeemer in treasury
+  const redeemerDeployment = await deployments.get(redeemer);
+  await execute(name, {from: deployer, log: true}, "updateRedeemer", redeemerDeployment.address);
+
+  version = await treasury.VERSION();
 };
 
 export default func;
 func.id = `${name}-${version}`;
 func.tags = [name];
-func.dependencies = [vusd];
+func.dependencies = [redeemer];
