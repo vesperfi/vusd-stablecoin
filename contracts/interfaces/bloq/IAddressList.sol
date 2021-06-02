@@ -7,6 +7,8 @@ interface IAddressList {
 
     function remove(address a) external returns (bool);
 
+    function at(uint256 index) external view returns (address, uint256);
+
     function get(address a) external view returns (uint256);
 
     function contains(address a) external view returns (bool);

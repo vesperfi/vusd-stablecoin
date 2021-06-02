@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "networks": {
     "mainnet": {
-      "DV": "0xb791a875eA4836a9EC16CdCF4F747c0b9CA47C7d",
+      "VUSD": "0xb791a875eA4836a9EC16CdCF4F747c0b9CA47C7d",
       "Minter": "0x4bC1a26EC4Ab5948B950a64479A4046701370599"
     }
   }

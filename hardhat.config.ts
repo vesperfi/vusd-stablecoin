@@ -5,6 +5,7 @@ import "@typechain/hardhat";
 import {HardhatUserConfig} from "hardhat/types";
 import "solidity-coverage";
 import "hardhat-log-remover";
+import "hardhat-gas-reporter";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -13,14 +14,14 @@ const gasPrice = 55000000000;
 const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
   networks: {
-    localhost :{
+    localhost: {
       saveDeployments: true,
     },
     hardhat: {
       saveDeployments: true,
       forking: {
         url: process.env.NODE_URL || "https://localhost:8545",
-        blockNumber: 12454838,
+        blockNumber: process.env.BLOCK_NUMBER ? parseInt(process.env.BLOCK_NUMBER) : undefined,
       },
     },
     mainnet: {
@@ -29,13 +30,16 @@ const config: HardhatUserConfig = {
       gas: 6700000,
       gasPrice,
     },
+    ropsten: {
+      url: process.env.NODE_URL_ROPSTEN,
+      chainId: 3,
+    }
   },
   paths: {
     deployments: "deployments",
   },
   namedAccounts: {
-    deployer: process.env.DEPLOYER || 0,
-    treasury:"0x6c2e3f1a88C19Bf4cf14fa38B8f745330573Da37",
+    deployer: process.env.DEPLOYER || 0
   },
   solidity: {
     compilers: [{version: "0.8.3", settings: {}}],

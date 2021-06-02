@@ -1,0 +1,326 @@
+{
+  "address": "0x7915CE4F43E1378f0C3720351A973A023F7fB3e8",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_vusd",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "previousRedeemFee",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "newRedeemFee",
+          "type": "uint256"
+        }
+      ],
+      "name": "UpdatedRedeemFee",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "MAX_REDEEM_FEE",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "NAME",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "VERSION",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "governor",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_vusdAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "redeem",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_vusdAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_tokenReceiver",
+          "type": "address"
+        }
+      ],
+      "name": "redeem",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "redeemFee",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "redeemable",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_vusdAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "redeemable",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "treasury",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_newRedeemFee",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateRedeemFee",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "vusd",
+      "outputs": [
+        {
+          "internalType": "contract IVUSD",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x36c914bf1144f0a8e4296dcd38a1ff5e073da0c44d1e70ea910dbf506a957ff5",
+  "receipt": {
+    "to": null,
+    "from": "0xB5AbDABE50b5193d4dB92a16011792B22bA3Ef51",
+    "contractAddress": "0x7915CE4F43E1378f0C3720351A973A023F7fB3e8",
+    "transactionIndex": 66,
+    "gasUsed": "1171872",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x555b2503785207330f4fe3d608fe61752d20f84a4792392db4b3fc6b5406b996",
+    "transactionHash": "0x36c914bf1144f0a8e4296dcd38a1ff5e073da0c44d1e70ea910dbf506a957ff5",
+    "logs": [],
+    "blockNumber": 12517791,
+    "cumulativeGasUsed": "7487686",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x677ddbd918637E5F2c79e164D402454dE7dA8619"
+  ],
+  "solcInputHash": "2ca97e329a6a43c8b41836cde7a46ae4",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.3+commit.8d00100c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_vusd\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"previousRedeemFee\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"newRedeemFee\",\"type\":\"uint256\"}],\"name\":\"UpdatedRedeemFee\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"MAX_REDEEM_FEE\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"NAME\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"VERSION\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"governor\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_vusdAmount\",\"type\":\"uint256\"}],\"name\":\"redeem\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_vusdAmount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"_tokenReceiver\",\"type\":\"address\"}],\"name\":\"redeem\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"redeemFee\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_token\",\"type\":\"address\"}],\"name\":\"redeemable\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_vusdAmount\",\"type\":\"uint256\"}],\"name\":\"redeemable\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"treasury\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_newRedeemFee\",\"type\":\"uint256\"}],\"name\":\"updateRedeemFee\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"vusd\",\"outputs\":[{\"internalType\":\"contract IVUSD\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"governor()\":{\"details\":\"Governor is defined in VUSD token contract only\"},\"redeem(address,uint256)\":{\"params\":{\"_token\":\"Token to redeem, it should be 1 of the supported tokens from treasury.\",\"_vusdAmount\":\"VUSD amount to burn\"}},\"redeem(address,uint256,address)\":{\"params\":{\"_token\":\"Token to redeem, it should be 1 of the supported tokens from treasury.\",\"_tokenReceiver\":\"Address of token receiver\",\"_vusdAmount\":\"VUSD amount to burn. VUSD will be burnt from caller\"}},\"redeemable(address)\":{\"details\":\"Current redeemable amount for given token\"},\"redeemable(address,uint256)\":{\"params\":{\"_token\":\"Token to redeem\",\"_vusdAmount\":\"VUSD amount to burn\"}},\"treasury()\":{\"details\":\"Treasury is defined in VUSD token contract only\"}},\"title\":\"VUSD Redeemer, User can redeem their VUSD with any supported tokens\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"redeem(address,uint256)\":{\"notice\":\"Redeem token and burn VUSD amount less redeem fee, if any.\"},\"redeem(address,uint256,address)\":{\"notice\":\"Redeem token and burn VUSD amount less redeem fee, if any.\"},\"redeemable(address,uint256)\":{\"notice\":\"Current redeemable amount for given token and vusdAmount. If token is not supported by treasury it will return 0. If vusdAmount is higher than current total redeemable of token it will return 0.\"},\"updateRedeemFee(uint256)\":{\"notice\":\"Update redeem fee\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Redeemer.sol\":\"Redeemer\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/security/ReentrancyGuard.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Contract module that helps prevent reentrant calls to a function.\\n *\\n * Inheriting from `ReentrancyGuard` will make the {nonReentrant} modifier\\n * available, which can be applied to functions to make sure there are no nested\\n * (reentrant) calls to them.\\n *\\n * Note that because there is a single `nonReentrant` guard, functions marked as\\n * `nonReentrant` may not call one another. This can be worked around by making\\n * those functions `private`, and then adding `external` `nonReentrant` entry\\n * points to them.\\n *\\n * TIP: If you would like to learn more about reentrancy and alternative ways\\n * to protect against it, check out our blog post\\n * https://blog.openzeppelin.com/reentrancy-after-istanbul/[Reentrancy After Istanbul].\\n */\\nabstract contract ReentrancyGuard {\\n    // Booleans are more expensive than uint256 or any type that takes up a full\\n    // word because each write operation emits an extra SLOAD to first read the\\n    // slot's contents, replace the bits taken up by the boolean, and then write\\n    // back. This is the compiler's defense against contract upgrades and\\n    // pointer aliasing, and it cannot be disabled.\\n\\n    // The values being non-zero value makes deployment a bit more expensive,\\n    // but in exchange the refund on every call to nonReentrant will be lower in\\n    // amount. Since refunds are capped to a percentage of the total\\n    // transaction's gas, it is best to keep them low in cases like this one, to\\n    // increase the likelihood of the full refund coming into effect.\\n    uint256 private constant _NOT_ENTERED = 1;\\n    uint256 private constant _ENTERED = 2;\\n\\n    uint256 private _status;\\n\\n    constructor () {\\n        _status = _NOT_ENTERED;\\n    }\\n\\n    /**\\n     * @dev Prevents a contract from calling itself, directly or indirectly.\\n     * Calling a `nonReentrant` function from another `nonReentrant`\\n     * function is not supported. It is possible to prevent this from happening\\n     * by making the `nonReentrant` function external, and make it call a\\n     * `private` function that does the actual work.\\n     */\\n    modifier nonReentrant() {\\n        // On the first call to nonReentrant, _notEntered will be true\\n        require(_status != _ENTERED, \\\"ReentrancyGuard: reentrant call\\\");\\n\\n        // Any calls to nonReentrant after this point will fail\\n        _status = _ENTERED;\\n\\n        _;\\n\\n        // By storing the original value once again, a refund is triggered (see\\n        // https://eips.ethereum.org/EIPS/eip-2200)\\n        _status = _NOT_ENTERED;\\n    }\\n}\\n\",\"keccak256\":\"0x1278c76b840063ff5e14a2d7c5707812c1eabc2342ed040bf862c2d7552102fe\",\"license\":\"MIT\"},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n */\\ninterface IERC20 {\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `recipient`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transfer(address recipient, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n     * zero by default.\\n     *\\n     * This value changes when {approve} or {transferFrom} are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `sender` to `recipient` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to {approve}. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n}\\n\",\"keccak256\":\"0xf8e8d118a7a8b2e134181f7da655f6266aa3a0f9134b2605747139fcb0c5d835\",\"license\":\"MIT\"},\"@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../IERC20.sol\\\";\\n\\n/**\\n * @dev Interface for the optional metadata functions from the ERC20 standard.\\n *\\n * _Available since v4.1._\\n */\\ninterface IERC20Metadata is IERC20 {\\n    /**\\n     * @dev Returns the name of the token.\\n     */\\n    function name() external view returns (string memory);\\n\\n    /**\\n     * @dev Returns the symbol of the token.\\n     */\\n    function symbol() external view returns (string memory);\\n\\n    /**\\n     * @dev Returns the decimals places of the token.\\n     */\\n    function decimals() external view returns (uint8);\\n}\\n\",\"keccak256\":\"0x83fe24f5c04a56091e50f4a345ff504c8bff658a76d4c43b16878c8f940c53b2\",\"license\":\"MIT\"},\"@openzeppelin/contracts/token/ERC20/extensions/draft-IERC20Permit.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC20 Permit extension allowing approvals to be made via signatures, as defined in\\n * https://eips.ethereum.org/EIPS/eip-2612[EIP-2612].\\n *\\n * Adds the {permit} method, which can be used to change an account's ERC20 allowance (see {IERC20-allowance}) by\\n * presenting a message signed by the account. By not relying on {IERC20-approve}, the token holder account doesn't\\n * need to send a transaction, and thus is not required to hold Ether at all.\\n */\\ninterface IERC20Permit {\\n    /**\\n     * @dev Sets `value` as the allowance of `spender` over ``owner``'s tokens,\\n     * given ``owner``'s signed approval.\\n     *\\n     * IMPORTANT: The same issues {IERC20-approve} has related to transaction\\n     * ordering also apply here.\\n     *\\n     * Emits an {Approval} event.\\n     *\\n     * Requirements:\\n     *\\n     * - `spender` cannot be the zero address.\\n     * - `deadline` must be a timestamp in the future.\\n     * - `v`, `r` and `s` must be a valid `secp256k1` signature from `owner`\\n     * over the EIP712-formatted function arguments.\\n     * - the signature must use ``owner``'s current nonce (see {nonces}).\\n     *\\n     * For more information on the signature format, see the\\n     * https://eips.ethereum.org/EIPS/eip-2612#specification[relevant EIP\\n     * section].\\n     */\\n    function permit(address owner, address spender, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external;\\n\\n    /**\\n     * @dev Returns the current nonce for `owner`. This value must be\\n     * included whenever a signature is generated for {permit}.\\n     *\\n     * Every successful call to {permit} increases ``owner``'s nonce by one. This\\n     * prevents a signature from being used multiple times.\\n     */\\n    function nonces(address owner) external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the domain separator used in the encoding of the signature for {permit}, as defined by {EIP712}.\\n     */\\n    // solhint-disable-next-line func-name-mixedcase\\n    function DOMAIN_SEPARATOR() external view returns (bytes32);\\n}\\n\",\"keccak256\":\"0xd9ed084a02c5daa5bef324379ef57ebb3c930acec091a521083152e8291c95ac\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/Context.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\n/*\\n * @dev Provides information about the current execution context, including the\\n * sender of the transaction and its data. While these are generally available\\n * via msg.sender and msg.data, they should not be accessed in such a direct\\n * manner, since when dealing with meta-transactions the account sending and\\n * paying for execution may not be the actual sender (as far as an application\\n * is concerned).\\n *\\n * This contract is only required for intermediate, library-like contracts.\\n */\\nabstract contract Context {\\n    function _msgSender() internal view virtual returns (address) {\\n        return msg.sender;\\n    }\\n\\n    function _msgData() internal view virtual returns (bytes calldata) {\\n        this; // silence state mutability warning without generating bytecode - see https://github.com/ethereum/solidity/issues/2691\\n        return msg.data;\\n    }\\n}\\n\",\"keccak256\":\"0xf930d2df426bfcfc1f7415be724f04081c96f4fb9ec8d0e3a521c07692dface0\",\"license\":\"MIT\"},\"contracts/Redeemer.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity 0.8.3;\\n\\nimport \\\"@openzeppelin/contracts/security/ReentrancyGuard.sol\\\";\\nimport \\\"@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol\\\";\\nimport \\\"@openzeppelin/contracts/utils/Context.sol\\\";\\nimport \\\"./interfaces/IVUSD.sol\\\";\\nimport \\\"./interfaces/ITreasury.sol\\\";\\n\\n/// @title VUSD Redeemer, User can redeem their VUSD with any supported tokens\\ncontract Redeemer is Context, ReentrancyGuard {\\n    string public constant NAME = \\\"VUSD-Redeemer\\\";\\n    string public constant VERSION = \\\"1.1.0\\\";\\n\\n    IVUSD public immutable vusd;\\n\\n    uint256 public redeemFee; // Default no fee\\n    uint256 public constant MAX_REDEEM_FEE = 10_000; // 10_000 = 100%\\n\\n    event UpdatedRedeemFee(uint256 previousRedeemFee, uint256 newRedeemFee);\\n\\n    constructor(address _vusd) {\\n        require(_vusd != address(0), \\\"vusd-address-is-zero\\\");\\n        vusd = IVUSD(_vusd);\\n    }\\n\\n    modifier onlyGovernor() {\\n        require(_msgSender() == governor(), \\\"caller-is-not-the-governor\\\");\\n        _;\\n    }\\n\\n    ////////////////////////////// Only Governor //////////////////////////////\\n\\n    /// @notice Update redeem fee\\n    function updateRedeemFee(uint256 _newRedeemFee) external onlyGovernor {\\n        require(_newRedeemFee <= MAX_REDEEM_FEE, \\\"redeem-fee-limit-reached\\\");\\n        require(redeemFee != _newRedeemFee, \\\"same-redeem-fee\\\");\\n        emit UpdatedRedeemFee(redeemFee, _newRedeemFee);\\n        redeemFee = _newRedeemFee;\\n    }\\n\\n    ///////////////////////////////////////////////////////////////////////////\\n\\n    /**\\n     * @notice Redeem token and burn VUSD amount less redeem fee, if any.\\n     * @param _token Token to redeem, it should be 1 of the supported tokens from treasury.\\n     * @param _vusdAmount VUSD amount to burn\\n     */\\n    function redeem(address _token, uint256 _vusdAmount) external nonReentrant {\\n        _redeem(_token, _vusdAmount, _msgSender());\\n    }\\n\\n    /**\\n     * @notice Redeem token and burn VUSD amount less redeem fee, if any.\\n     * @param _token Token to redeem, it should be 1 of the supported tokens from treasury.\\n     * @param _vusdAmount VUSD amount to burn. VUSD will be burnt from caller\\n     * @param _tokenReceiver Address of token receiver\\n     */\\n    function redeem(\\n        address _token,\\n        uint256 _vusdAmount,\\n        address _tokenReceiver\\n    ) external nonReentrant {\\n        _redeem(_token, _vusdAmount, _tokenReceiver);\\n    }\\n\\n    /**\\n     * @notice Current redeemable amount for given token and vusdAmount.\\n     * If token is not supported by treasury it will return 0.\\n     * If vusdAmount is higher than current total redeemable of token it will return 0.\\n     * @param _token Token to redeem\\n     * @param _vusdAmount VUSD amount to burn\\n     */\\n    function redeemable(address _token, uint256 _vusdAmount) external view returns (uint256) {\\n        ITreasury _treasury = ITreasury(treasury());\\n        if (_treasury.whitelistedTokens().contains(_token)) {\\n            uint256 _redeemable = _calculateRedeemable(_token, _vusdAmount);\\n            return _redeemable > redeemable(_token) ? 0 : _redeemable;\\n        }\\n        return 0;\\n    }\\n\\n    /// @dev Current redeemable amount for given token\\n    function redeemable(address _token) public view returns (uint256) {\\n        return ITreasury(treasury()).withdrawable(_token);\\n    }\\n\\n    /// @dev Governor is defined in VUSD token contract only\\n    function governor() public view returns (address) {\\n        return vusd.governor();\\n    }\\n\\n    /// @dev Treasury is defined in VUSD token contract only\\n    function treasury() public view returns (address) {\\n        return vusd.treasury();\\n    }\\n\\n    function _redeem(\\n        address _token,\\n        uint256 _vusdAmount,\\n        address _tokenReceiver\\n    ) internal {\\n        // In case of redeemFee, We will burn vusdAmount from user and withdraw (vusdAmount - fee) from treasury.\\n        uint256 _redeemable = _calculateRedeemable(_token, _vusdAmount);\\n        // Burn vusdAmount\\n        vusd.burnFrom(_msgSender(), _vusdAmount);\\n        // Withdraw _redeemable\\n        ITreasury(treasury()).withdraw(_token, _redeemable, _tokenReceiver);\\n    }\\n\\n    /**\\n     * @notice Calculate redeemable amount based on redeemFee, if any.\\n     * Also covert 18 decimal VUSD amount to _token defined decimal amount.\\n     * @return Token amount that user will get after burning vusdAmount\\n     */\\n    function _calculateRedeemable(address _token, uint256 _vusdAmount) internal view returns (uint256) {\\n        uint256 _decimals = IERC20Metadata(_token).decimals();\\n        uint256 _redeemable = redeemFee != 0 ? _vusdAmount - ((_vusdAmount * redeemFee) / MAX_REDEEM_FEE) : _vusdAmount;\\n        return _redeemable / 10**(18 - _decimals);\\n    }\\n}\\n\",\"keccak256\":\"0x85b8c6103556a7b15f758cb6fb64484b114cd608f391cd806d59b601631d6e50\",\"license\":\"MIT\"},\"contracts/interfaces/ITreasury.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity 0.8.3;\\n\\nimport \\\"./bloq/IAddressList.sol\\\";\\n\\ninterface ITreasury {\\n    function withdraw(address _token, uint256 _amount) external;\\n\\n    function withdraw(\\n        address _token,\\n        uint256 _amount,\\n        address _tokenReceiver\\n    ) external;\\n\\n    function withdrawable(address _token) external view returns (uint256);\\n\\n    function whitelistedTokens() external view returns (IAddressList);\\n}\\n\",\"keccak256\":\"0xf12f118bd7ddfb1eea61bc9393f5ac031ea55034a5074d356204b8996b26c036\",\"license\":\"MIT\"},\"contracts/interfaces/IVUSD.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity 0.8.3;\\n\\nimport \\\"@openzeppelin/contracts/token/ERC20/extensions/draft-IERC20Permit.sol\\\";\\nimport \\\"@openzeppelin/contracts/token/ERC20/IERC20.sol\\\";\\n\\ninterface IVUSD is IERC20, IERC20Permit {\\n    function burnFrom(address _user, uint256 _amount) external;\\n\\n    function mint(address _to, uint256 _amount) external;\\n\\n    function multiTransfer(address[] memory _recipients, uint256[] memory _amounts) external returns (bool);\\n\\n    function updateMinter(address _newMinter) external;\\n\\n    function updateTreasury(address _newTreasury) external;\\n\\n    function governor() external view returns (address _governor);\\n\\n    function minter() external view returns (address _minter);\\n\\n    function treasury() external view returns (address _treasury);\\n}\\n\",\"keccak256\":\"0x8d71611c4eed15692750ddb017ea54f04681b32d89f10a319c9929abda4a4cda\",\"license\":\"MIT\"},\"contracts/interfaces/bloq/IAddressList.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity 0.8.3;\\n\\ninterface IAddressList {\\n    function add(address a) external returns (bool);\\n\\n    function remove(address a) external returns (bool);\\n\\n    function get(address a) external view returns (uint256);\\n\\n    function contains(address a) external view returns (bool);\\n\\n    function length() external view returns (uint256);\\n\\n    function grantRole(bytes32 role, address account) external;\\n}\\n\",\"keccak256\":\"0x573e4beae1fcf79639afaf2ab3eb606b599fb71d678ca64e69f07620a3091af3\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60a06040523480156200001157600080fd5b50604051620015ff380380620015ff833981810160405281019062000037919062000107565b6001600081905550600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415620000b2576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401620000a9906200015a565b60405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff1660808173ffffffffffffffffffffffffffffffffffffffff1660601b815250505062000204565b6000815190506200010181620001ea565b92915050565b6000602082840312156200011a57600080fd5b60006200012a84828501620000f0565b91505092915050565b6000620001426014836200017c565b91506200014f82620001c1565b602082019050919050565b60006020820190508181036000830152620001758162000133565b9050919050565b600082825260208201905092915050565b60006200019a82620001a1565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b7f767573642d616464726573732d69732d7a65726f000000000000000000000000600082015250565b620001f5816200018d565b81146200020157600080fd5b50565b60805160601c6113c76200023860003960008181610243015281816104590152818161068e015261084c01526113c76000f3fe608060405234801561001057600080fd5b50600436106100b45760003560e01c806367627b621161007157806367627b621461017b578063965fa21e146101ab578063a3f4df7e146101c9578063edac5203146101e7578063fb00d51414610205578063ffa1ad7414610221576100b4565b80630c340a24146100b95780631e9a6950146100d757806326ac1d56146100f3578063484267a4146101115780635c833bfd1461014157806361d027b31461015d575b600080fd5b6100c161023f565b6040516100ce9190610d78565b60405180910390f35b6100f160048036038101906100ec9190610b2e565b6102e4565b005b6100fb610350565b6040516101089190610eb0565b60405180910390f35b61012b60048036038101906101269190610adc565b610356565b6040516101389190610eb0565b60405180910390f35b61015b60048036038101906101569190610b6a565b6103ef565b005b610165610455565b6040516101729190610d78565b60405180910390f35b61019560048036038101906101909190610b2e565b6104fa565b6040516101a29190610eb0565b60405180910390f35b6101b361064d565b6040516101c09190610eb0565b60405180910390f35b6101d1610653565b6040516101de9190610e0e565b60405180910390f35b6101ef61068c565b6040516101fc9190610df3565b60405180910390f35b61021f600480360381019061021a9190610c0b565b6106b0565b005b6102296107fb565b6040516102369190610e0e565b60405180910390f35b60007f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff16630c340a246040518163ffffffff1660e01b815260040160206040518083038186803b1580156102a757600080fd5b505afa1580156102bb573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102df9190610b05565b905090565b6002600054141561032a576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161032190610e70565b60405180910390fd5b6002600081905550610344828261033f610834565b61083c565b60016000819055505050565b61271081565b6000610360610455565b73ffffffffffffffffffffffffffffffffffffffff1663ce513b6f836040518263ffffffff1660e01b81526004016103989190610d78565b60206040518083038186803b1580156103b057600080fd5b505afa1580156103c4573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103e89190610c34565b9050919050565b60026000541415610435576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161042c90610e70565b60405180910390fd5b600260008190555061044883838361083c565b6001600081905550505050565b60007f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff166361d027b36040518163ffffffff1660e01b815260040160206040518083038186803b1580156104bd57600080fd5b505afa1580156104d1573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906104f59190610b05565b905090565b600080610505610455565b90508073ffffffffffffffffffffffffffffffffffffffff16635e1762a06040518163ffffffff1660e01b815260040160206040518083038186803b15801561054d57600080fd5b505afa158015610561573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906105859190610be2565b73ffffffffffffffffffffffffffffffffffffffff16635dbe47e8856040518263ffffffff1660e01b81526004016105bd9190610d78565b60206040518083038186803b1580156105d557600080fd5b505afa1580156105e9573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061060d9190610bb9565b1561064157600061061e858561095a565b905061062985610356565b81116106355780610638565b60005b92505050610647565b60009150505b92915050565b60015481565b6040518060400160405280600d81526020017f565553442d52656465656d65720000000000000000000000000000000000000081525081565b7f000000000000000000000000000000000000000000000000000000000000000081565b6106b861023f565b73ffffffffffffffffffffffffffffffffffffffff166106d6610834565b73ffffffffffffffffffffffffffffffffffffffff161461072c576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161072390610e30565b60405180910390fd5b612710811115610771576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161076890610e90565b60405180910390fd5b8060015414156107b6576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016107ad90610e50565b60405180910390fd5b7f78f68725a1b1a56a998dd7a8d279eb9bfbd45bc0fcee78f408200737275873e5600154826040516107e9929190610ecb565b60405180910390a18060018190555050565b6040518060400160405280600581526020017f312e312e3000000000000000000000000000000000000000000000000000000081525081565b600033905090565b6000610848848461095a565b90507f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff166379cc679061088e610834565b856040518363ffffffff1660e01b81526004016108ac929190610d93565b600060405180830381600087803b1580156108c657600080fd5b505af11580156108da573d6000803e3d6000fd5b505050506108e6610455565b73ffffffffffffffffffffffffffffffffffffffff166369328dec8583856040518463ffffffff1660e01b815260040161092293929190610dbc565b600060405180830381600087803b15801561093c57600080fd5b505af1158015610950573d6000803e3d6000fd5b5050505050505050565b6000808373ffffffffffffffffffffffffffffffffffffffff1663313ce5676040518163ffffffff1660e01b815260040160206040518083038186803b1580156109a357600080fd5b505afa1580156109b7573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906109db9190610c5d565b60ff16905060008060015414156109f25783610a19565b61271060015485610a0391906110b2565b610a0d9190610f10565b84610a18919061110c565b5b9050816012610a28919061110c565b600a610a349190610f94565b81610a3f9190610f10565b9250505092915050565b600081359050610a588161131e565b92915050565b600081519050610a6d8161131e565b92915050565b600081519050610a8281611335565b92915050565b600081519050610a978161134c565b92915050565b600081359050610aac81611363565b92915050565b600081519050610ac181611363565b92915050565b600081519050610ad68161137a565b92915050565b600060208284031215610aee57600080fd5b6000610afc84828501610a49565b91505092915050565b600060208284031215610b1757600080fd5b6000610b2584828501610a5e565b91505092915050565b60008060408385031215610b4157600080fd5b6000610b4f85828601610a49565b9250506020610b6085828601610a9d565b9150509250929050565b600080600060608486031215610b7f57600080fd5b6000610b8d86828701610a49565b9350506020610b9e86828701610a9d565b9250506040610baf86828701610a49565b9150509250925092565b600060208284031215610bcb57600080fd5b6000610bd984828501610a73565b91505092915050565b600060208284031215610bf457600080fd5b6000610c0284828501610a88565b91505092915050565b600060208284031215610c1d57600080fd5b6000610c2b84828501610a9d565b91505092915050565b600060208284031215610c4657600080fd5b6000610c5484828501610ab2565b91505092915050565b600060208284031215610c6f57600080fd5b6000610c7d84828501610ac7565b91505092915050565b610c8f81611140565b82525050565b610c9e816111a7565b82525050565b6000610caf82610ef4565b610cb98185610eff565b9350610cc98185602086016111cb565b610cd28161125c565b840191505092915050565b6000610cea601a83610eff565b9150610cf58261127a565b602082019050919050565b6000610d0d600f83610eff565b9150610d18826112a3565b602082019050919050565b6000610d30601f83610eff565b9150610d3b826112cc565b602082019050919050565b6000610d53601883610eff565b9150610d5e826112f5565b602082019050919050565b610d7281611190565b82525050565b6000602082019050610d8d6000830184610c86565b92915050565b6000604082019050610da86000830185610c86565b610db56020830184610d69565b9392505050565b6000606082019050610dd16000830186610c86565b610dde6020830185610d69565b610deb6040830184610c86565b949350505050565b6000602082019050610e086000830184610c95565b92915050565b60006020820190508181036000830152610e288184610ca4565b905092915050565b60006020820190508181036000830152610e4981610cdd565b9050919050565b60006020820190508181036000830152610e6981610d00565b9050919050565b60006020820190508181036000830152610e8981610d23565b9050919050565b60006020820190508181036000830152610ea981610d46565b9050919050565b6000602082019050610ec56000830184610d69565b92915050565b6000604082019050610ee06000830185610d69565b610eed6020830184610d69565b9392505050565b600081519050919050565b600082825260208201905092915050565b6000610f1b82611190565b9150610f2683611190565b925082610f3657610f3561122d565b5b828204905092915050565b6000808291508390505b6001851115610f8b57808604811115610f6757610f666111fe565b5b6001851615610f765780820291505b8081029050610f848561126d565b9450610f4b565b94509492505050565b6000610f9f82611190565b9150610faa83611190565b9250610fd77fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8484610fdf565b905092915050565b600082610fef57600190506110ab565b81610ffd57600090506110ab565b8160018114611013576002811461101d5761104c565b60019150506110ab565b60ff84111561102f5761102e6111fe565b5b8360020a915084821115611046576110456111fe565b5b506110ab565b5060208310610133831016604e8410600b84101617156110815782820a90508381111561107c5761107b6111fe565b5b6110ab565b61108e8484846001610f41565b925090508184048111156110a5576110a46111fe565b5b81810290505b9392505050565b60006110bd82611190565b91506110c883611190565b9250817fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0483118215151615611101576111006111fe565b5b828202905092915050565b600061111782611190565b915061112283611190565b925082821015611135576111346111fe565b5b828203905092915050565b600061114b82611170565b9050919050565b60008115159050919050565b600061116982611140565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b600060ff82169050919050565b60006111b2826111b9565b9050919050565b60006111c482611170565b9050919050565b60005b838110156111e95780820151818401526020810190506111ce565b838111156111f8576000848401525b50505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601260045260246000fd5b6000601f19601f8301169050919050565b60008160011c9050919050565b7f63616c6c65722d69732d6e6f742d7468652d676f7665726e6f72000000000000600082015250565b7f73616d652d72656465656d2d6665650000000000000000000000000000000000600082015250565b7f5265656e7472616e637947756172643a207265656e7472616e742063616c6c00600082015250565b7f72656465656d2d6665652d6c696d69742d726561636865640000000000000000600082015250565b61132781611140565b811461133257600080fd5b50565b61133e81611152565b811461134957600080fd5b50565b6113558161115e565b811461136057600080fd5b50565b61136c81611190565b811461137757600080fd5b50565b6113838161119a565b811461138e57600080fd5b5056fea2646970667358221220f8a8c9663870f3cb060161b18987eba22ede0e7e6f77bc687ddc39d4eb3c8e9464736f6c63430008030033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100b45760003560e01c806367627b621161007157806367627b621461017b578063965fa21e146101ab578063a3f4df7e146101c9578063edac5203146101e7578063fb00d51414610205578063ffa1ad7414610221576100b4565b80630c340a24146100b95780631e9a6950146100d757806326ac1d56146100f3578063484267a4146101115780635c833bfd1461014157806361d027b31461015d575b600080fd5b6100c161023f565b6040516100ce9190610d78565b60405180910390f35b6100f160048036038101906100ec9190610b2e565b6102e4565b005b6100fb610350565b6040516101089190610eb0565b60405180910390f35b61012b60048036038101906101269190610adc565b610356565b6040516101389190610eb0565b60405180910390f35b61015b60048036038101906101569190610b6a565b6103ef565b005b610165610455565b6040516101729190610d78565b60405180910390f35b61019560048036038101906101909190610b2e565b6104fa565b6040516101a29190610eb0565b60405180910390f35b6101b361064d565b6040516101c09190610eb0565b60405180910390f35b6101d1610653565b6040516101de9190610e0e565b60405180910390f35b6101ef61068c565b6040516101fc9190610df3565b60405180910390f35b61021f600480360381019061021a9190610c0b565b6106b0565b005b6102296107fb565b6040516102369190610e0e565b60405180910390f35b60007f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff16630c340a246040518163ffffffff1660e01b815260040160206040518083038186803b1580156102a757600080fd5b505afa1580156102bb573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102df9190610b05565b905090565b6002600054141561032a576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161032190610e70565b60405180910390fd5b6002600081905550610344828261033f610834565b61083c565b60016000819055505050565b61271081565b6000610360610455565b73ffffffffffffffffffffffffffffffffffffffff1663ce513b6f836040518263ffffffff1660e01b81526004016103989190610d78565b60206040518083038186803b1580156103b057600080fd5b505afa1580156103c4573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103e89190610c34565b9050919050565b60026000541415610435576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161042c90610e70565b60405180910390fd5b600260008190555061044883838361083c565b6001600081905550505050565b60007f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff166361d027b36040518163ffffffff1660e01b815260040160206040518083038186803b1580156104bd57600080fd5b505afa1580156104d1573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906104f59190610b05565b905090565b600080610505610455565b90508073ffffffffffffffffffffffffffffffffffffffff16635e1762a06040518163ffffffff1660e01b815260040160206040518083038186803b15801561054d57600080fd5b505afa158015610561573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906105859190610be2565b73ffffffffffffffffffffffffffffffffffffffff16635dbe47e8856040518263ffffffff1660e01b81526004016105bd9190610d78565b60206040518083038186803b1580156105d557600080fd5b505afa1580156105e9573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061060d9190610bb9565b1561064157600061061e858561095a565b905061062985610356565b81116106355780610638565b60005b92505050610647565b60009150505b92915050565b60015481565b6040518060400160405280600d81526020017f565553442d52656465656d65720000000000000000000000000000000000000081525081565b7f000000000000000000000000000000000000000000000000000000000000000081565b6106b861023f565b73ffffffffffffffffffffffffffffffffffffffff166106d6610834565b73ffffffffffffffffffffffffffffffffffffffff161461072c576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161072390610e30565b60405180910390fd5b612710811115610771576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161076890610e90565b60405180910390fd5b8060015414156107b6576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016107ad90610e50565b60405180910390fd5b7f78f68725a1b1a56a998dd7a8d279eb9bfbd45bc0fcee78f408200737275873e5600154826040516107e9929190610ecb565b60405180910390a18060018190555050565b6040518060400160405280600581526020017f312e312e3000000000000000000000000000000000000000000000000000000081525081565b600033905090565b6000610848848461095a565b90507f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff166379cc679061088e610834565b856040518363ffffffff1660e01b81526004016108ac929190610d93565b600060405180830381600087803b1580156108c657600080fd5b505af11580156108da573d6000803e3d6000fd5b505050506108e6610455565b73ffffffffffffffffffffffffffffffffffffffff166369328dec8583856040518463ffffffff1660e01b815260040161092293929190610dbc565b600060405180830381600087803b15801561093c57600080fd5b505af1158015610950573d6000803e3d6000fd5b5050505050505050565b6000808373ffffffffffffffffffffffffffffffffffffffff1663313ce5676040518163ffffffff1660e01b815260040160206040518083038186803b1580156109a357600080fd5b505afa1580156109b7573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906109db9190610c5d565b60ff16905060008060015414156109f25783610a19565b61271060015485610a0391906110b2565b610a0d9190610f10565b84610a18919061110c565b5b9050816012610a28919061110c565b600a610a349190610f94565b81610a3f9190610f10565b9250505092915050565b600081359050610a588161131e565b92915050565b600081519050610a6d8161131e565b92915050565b600081519050610a8281611335565b92915050565b600081519050610a978161134c565b92915050565b600081359050610aac81611363565b92915050565b600081519050610ac181611363565b92915050565b600081519050610ad68161137a565b92915050565b600060208284031215610aee57600080fd5b6000610afc84828501610a49565b91505092915050565b600060208284031215610b1757600080fd5b6000610b2584828501610a5e565b91505092915050565b60008060408385031215610b4157600080fd5b6000610b4f85828601610a49565b9250506020610b6085828601610a9d565b9150509250929050565b600080600060608486031215610b7f57600080fd5b6000610b8d86828701610a49565b9350506020610b9e86828701610a9d565b9250506040610baf86828701610a49565b9150509250925092565b600060208284031215610bcb57600080fd5b6000610bd984828501610a73565b91505092915050565b600060208284031215610bf457600080fd5b6000610c0284828501610a88565b91505092915050565b600060208284031215610c1d57600080fd5b6000610c2b84828501610a9d565b91505092915050565b600060208284031215610c4657600080fd5b6000610c5484828501610ab2565b91505092915050565b600060208284031215610c6f57600080fd5b6000610c7d84828501610ac7565b91505092915050565b610c8f81611140565b82525050565b610c9e816111a7565b82525050565b6000610caf82610ef4565b610cb98185610eff565b9350610cc98185602086016111cb565b610cd28161125c565b840191505092915050565b6000610cea601a83610eff565b9150610cf58261127a565b602082019050919050565b6000610d0d600f83610eff565b9150610d18826112a3565b602082019050919050565b6000610d30601f83610eff565b9150610d3b826112cc565b602082019050919050565b6000610d53601883610eff565b9150610d5e826112f5565b602082019050919050565b610d7281611190565b82525050565b6000602082019050610d8d6000830184610c86565b92915050565b6000604082019050610da86000830185610c86565b610db56020830184610d69565b9392505050565b6000606082019050610dd16000830186610c86565b610dde6020830185610d69565b610deb6040830184610c86565b949350505050565b6000602082019050610e086000830184610c95565b92915050565b60006020820190508181036000830152610e288184610ca4565b905092915050565b60006020820190508181036000830152610e4981610cdd565b9050919050565b60006020820190508181036000830152610e6981610d00565b9050919050565b60006020820190508181036000830152610e8981610d23565b9050919050565b60006020820190508181036000830152610ea981610d46565b9050919050565b6000602082019050610ec56000830184610d69565b92915050565b6000604082019050610ee06000830185610d69565b610eed6020830184610d69565b9392505050565b600081519050919050565b600082825260208201905092915050565b6000610f1b82611190565b9150610f2683611190565b925082610f3657610f3561122d565b5b828204905092915050565b6000808291508390505b6001851115610f8b57808604811115610f6757610f666111fe565b5b6001851615610f765780820291505b8081029050610f848561126d565b9450610f4b565b94509492505050565b6000610f9f82611190565b9150610faa83611190565b9250610fd77fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8484610fdf565b905092915050565b600082610fef57600190506110ab565b81610ffd57600090506110ab565b8160018114611013576002811461101d5761104c565b60019150506110ab565b60ff84111561102f5761102e6111fe565b5b8360020a915084821115611046576110456111fe565b5b506110ab565b5060208310610133831016604e8410600b84101617156110815782820a90508381111561107c5761107b6111fe565b5b6110ab565b61108e8484846001610f41565b925090508184048111156110a5576110a46111fe565b5b81810290505b9392505050565b60006110bd82611190565b91506110c883611190565b9250817fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0483118215151615611101576111006111fe565b5b828202905092915050565b600061111782611190565b915061112283611190565b925082821015611135576111346111fe565b5b828203905092915050565b600061114b82611170565b9050919050565b60008115159050919050565b600061116982611140565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b600060ff82169050919050565b60006111b2826111b9565b9050919050565b60006111c482611170565b9050919050565b60005b838110156111e95780820151818401526020810190506111ce565b838111156111f8576000848401525b50505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601260045260246000fd5b6000601f19601f8301169050919050565b60008160011c9050919050565b7f63616c6c65722d69732d6e6f742d7468652d676f7665726e6f72000000000000600082015250565b7f73616d652d72656465656d2d6665650000000000000000000000000000000000600082015250565b7f5265656e7472616e637947756172643a207265656e7472616e742063616c6c00600082015250565b7f72656465656d2d6665652d6c696d69742d726561636865640000000000000000600082015250565b61132781611140565b811461133257600080fd5b50565b61133e81611152565b811461134957600080fd5b50565b6113558161115e565b811461136057600080fd5b50565b61136c81611190565b811461137757600080fd5b50565b6113838161119a565b811461138e57600080fd5b5056fea2646970667358221220f8a8c9663870f3cb060161b18987eba22ede0e7e6f77bc687ddc39d4eb3c8e9464736f6c63430008030033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "governor()": {
+        "details": "Governor is defined in VUSD token contract only"
+      },
+      "redeem(address,uint256)": {
+        "params": {
+          "_token": "Token to redeem, it should be 1 of the supported tokens from treasury.",
+          "_vusdAmount": "VUSD amount to burn"
+        }
+      },
+      "redeem(address,uint256,address)": {
+        "params": {
+          "_token": "Token to redeem, it should be 1 of the supported tokens from treasury.",
+          "_tokenReceiver": "Address of token receiver",
+          "_vusdAmount": "VUSD amount to burn. VUSD will be burnt from caller"
+        }
+      },
+      "redeemable(address)": {
+        "details": "Current redeemable amount for given token"
+      },
+      "redeemable(address,uint256)": {
+        "params": {
+          "_token": "Token to redeem",
+          "_vusdAmount": "VUSD amount to burn"
+        }
+      },
+      "treasury()": {
+        "details": "Treasury is defined in VUSD token contract only"
+      }
+    },
+    "title": "VUSD Redeemer, User can redeem their VUSD with any supported tokens",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "redeem(address,uint256)": {
+        "notice": "Redeem token and burn VUSD amount less redeem fee, if any."
+      },
+      "redeem(address,uint256,address)": {
+        "notice": "Redeem token and burn VUSD amount less redeem fee, if any."
+      },
+      "redeemable(address,uint256)": {
+        "notice": "Current redeemable amount for given token and vusdAmount. If token is not supported by treasury it will return 0. If vusdAmount is higher than current total redeemable of token it will return 0."
+      },
+      "updateRedeemFee(uint256)": {
+        "notice": "Update redeem fee"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 10,
+        "contract": "contracts/Redeemer.sol:Redeemer",
+        "label": "_status",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 2396,
+        "contract": "contracts/Redeemer.sol:Redeemer",
+        "label": "redeemFee",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
