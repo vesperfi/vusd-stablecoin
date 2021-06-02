@@ -7,8 +7,8 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "./Governed.sol";
 
-/// @title Virtual Dollar (DV), A stablecoin pegged to the US Dollar, backed by interest-generating collateral.
-contract VirtualDollar is ERC20Permit, ERC20Burnable, Governed {
+/// @title VUSD, A stablecoin pegged to the US Dollar, backed by interest-generating collateral.
+contract VUSD is ERC20Permit, ERC20Burnable, Governed {
     using SafeERC20 for IERC20;
 
     address public minter;
@@ -17,7 +17,7 @@ contract VirtualDollar is ERC20Permit, ERC20Burnable, Governed {
     event UpdatedMinter(address indexed previousMinter, address indexed newMinter);
     event UpdatedTreasury(address indexed previousTreasury, address indexed newTreasury);
 
-    constructor(address _treasury) ERC20Permit("Virtual Dollar") ERC20("Virtual Dollar", "DV") {
+    constructor(address _treasury) ERC20Permit("VUSD") ERC20("VUSD", "VUSD") {
         require(_treasury != address(0), "treasury-address-is-zero");
         treasury = _treasury;
         emit UpdatedTreasury(address(0), _treasury);
@@ -29,9 +29,9 @@ contract VirtualDollar is ERC20Permit, ERC20Burnable, Governed {
     }
 
     /**
-     * @notice Mint DV, only minter can call this.
-     * @param _to Address where DV will be minted
-     * @param _amount DV amount to mint
+     * @notice Mint VUSD, only minter can call this.
+     * @param _to Address where VUSD will be minted
+     * @param _amount VUSD amount to mint
      */
     function mint(address _to, uint256 _amount) external onlyMinter {
         _mint(_to, _amount);
@@ -40,7 +40,7 @@ contract VirtualDollar is ERC20Permit, ERC20Burnable, Governed {
     /**
      * @notice Transfer tokens to multiple recipient
      * @dev Address array and amount array are 1:1 and are in order.
-     * @param _recipients array of receipient addresses
+     * @param _recipients array of recipient addresses
      * @param _amounts array of token amounts
      * @return true/false
      */
@@ -53,7 +53,7 @@ contract VirtualDollar is ERC20Permit, ERC20Burnable, Governed {
     }
 
     /**
-     * @notice Update DV minter address
+     * @notice Update VUSD minter address
      * @param _newMinter new minter address
      */
     function updateMinter(address _newMinter) external onlyGovernor {
@@ -64,7 +64,7 @@ contract VirtualDollar is ERC20Permit, ERC20Burnable, Governed {
     }
 
     /**
-     * @notice Update DV treasury address
+     * @notice Update VUSD treasury address
      * @param _newTreasury new treasury address
      */
     function updateTreasury(address _newTreasury) external onlyGovernor {

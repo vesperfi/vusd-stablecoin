@@ -22,7 +22,7 @@ async function swapEthForToken(
   ethAmount: string,
   toToken: string,
   caller: SignerWithAddress,
-  receiver?: SignerWithAddress
+  receiver?: string
 ): Promise<BigNumber> {
   const toAddress = receiver || caller.address;
   const amountIn = BigNumber.from(ethAmount).mul(DECIMAL).toString();

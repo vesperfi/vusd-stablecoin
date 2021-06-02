@@ -1,4 +1,4 @@
-# Virtual Dollar (DV)
+# VUSD
 
 A stablecoin pegged to the US Dollar, backed by interest-generating collateral.
 
@@ -7,8 +7,8 @@ A stablecoin pegged to the US Dollar, backed by interest-generating collateral.
 1. Install 
 
    ```sh
-   git clone https://github.com/vesperfi/dv-stablecoin.git
-   cd dv-stablecoin
+   git clone https://github.com/vesperfi/vusd-stablecoin.git
+   cd vusd-stablecoin
    npm install
    ```
 2. set NODE_URL in env
