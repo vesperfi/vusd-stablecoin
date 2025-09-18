@@ -1,0 +1,11 @@
+{
+  "version": "1.5.0",
+  "networks": {
+    "mainnet": {
+      "VUSD": "0x677ddbd918637E5F2c79e164D402454dE7dA8619",
+      "Minter": "0x3C8aeF08d90C2418f8AE887af47ba7d8Db88AF6b",
+      "Redeemer": "0x43c704BC0F773B529E871EAAF4E283C2233512F9",
+      "Treasury": "0x98c00C15Ef16Fb8aF1dc47151287B0168D9a35d1"
+    }
+  }
+}
